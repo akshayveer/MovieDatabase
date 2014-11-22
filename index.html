@@ -186,6 +186,66 @@
 	</a>
 </div>
 
+<div class="container-fluid" style="height: 535px;">
+	<div align="right">
+		<h3>Latest Trailers</h3>
+	</div> 
+
+	<div class="col-md-4" id="link" style="position:relative; left:0; top:0;"> 
+		<img  style="width: 100%;height: 500px; position:absolute; top:0; left:0"  src="http://img.youtube.com/vi/zSWdZVtXT7E/0.jpg" />
+		<img  style="width: 60px; position:relative;";	src="images/images.png" />
+	</div>
+
+	<div class="col-md-8" id="link2" style="position:relative; left:0; top:0;"> 
+		<img  style="width:100%;height: 500px; position:absolute; top:0; left:0"  src="http://img.youtube.com/vi/S5CjKEFb-sM/0.jpg" />
+		<img  style="width: 60px; position:relative;";	src="images/images.png" />
+	</div>
+</div>
+
+<div id="myModal3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <iframe width="500" height="500" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="myModal4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <iframe width="500" height="500" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+	<div class="col-md-4"  id="famous" style="background-color:blue; height: 535px;"> 
+	<h3 style="background-color:black; color:white">Famous Celebs</h3>
+	</div>
+	<div class="col-md-4" id="famous" style="background-color:green; height: 535px;">
+	<h3 style="background-color:black; color:white">Top Rated Movies</h3>
+ </div>
+	<div class="col-md-4" id="famous" style="background-color:lightgray; height: 535px;"> 
+	<h3 style="background-color:black; color:white">Movie Suggestions</h3>
+	</div>
+</div>
+
+<div class="container-fluid" style="height: 535px;">
+	<div align="right">
+		<h3>Recent Viewed</h3>
+	</div> 
+</div>
+</div>
 
 </body>
 <script src="js/jquery-2.1.1.js"></script>
@@ -195,6 +255,7 @@
 <script src="js/video.js" type="text/javascript" charset="utf-8"></script>
 
 <script>
+
 	$(document).ready(function(){
 		VideoJS.setupAllWhenReady();
 		$("#registerSwitch").click(function(){
@@ -211,6 +272,25 @@
 			$('#myModal').modal('hide');
 			$('myModal2').modal('show');
 		});
+		$('#link').click(function () {
+        var src = 'https://www.youtube.com/embed/zSWdZVtXT7E';
+        $('#myModal3').modal('show');
+        $('#myModal3 iframe').attr('src', src);
+    });
+
+    $('#myModal3 button').click(function () {
+        $('#myModal3 iframe').removeAttr('src');
+    });
+		$('#link2').click(function () {
+        var src = 'https://www.youtube.com/embed/S5CjKEFb-sM';
+        $('#myModal4').modal('show');
+        $('#myModal4 iframe').attr('src', src);
+    });
+
+    $('#myModal4 button').click(function () {
+        $('#myModal4 iframe').removeAttr('src');
+    });   
+	
 	});
 </script>
 </html>
