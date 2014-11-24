@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    	.def{width: 400px;margin-left: 15%;}
+    	.newpanel {
+    	width: 400px;
+    	
+		  }
+    	.mypanel {
+    	<!--max-height: 120px;-->
+    	width: 400px;
+   		<!--overflow-y: scroll;-->
+		    }
+    </style>
+<!-- Le styles -->
+<link href="css/bootstrap.css" rel="stylesheet">
+</head>
+ 
+<body>
+ 
+<div class="container">
+ 
+
+<div id="content">
+	<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+		<li class="active"><a href="#red" data-toggle="tab">In Theaters</a></li>
+		<li><a href="#orange" data-toggle="tab">Coming Soon</a></li>
+	</ul>
+
+	<div id="my-tab-content" class="tab-content">
+		<div class="tab-pane active" id="red">
+      <div class="panel panel-default def">
+        <div class="panel-heading newpanel">
+         The Hunger Games: Mockingjay - Part 1 (2014)
+      </div>
+      <div class="panel-body mypanel"> 
+        <div style="clear: left;">
+          <p style="float: left;"><img src="images/hunger.jpg" height="120" width="100" border="1px"></p>
+          <p><br><b>Director</b>  Francis Lawrence </br>
+             <br><b>Stars</b>  Jennifer Lawrence, Josh Hutcherson, Liam Hemsworth, Woody Harrelson </br></p>
+        </div>       
+          THE BUZZ: There's been a bit of critical rebellion against this, the penultimate chapter of The Hunger Games movie franchise, which has been making me laugh since the story has been called "too talky" by some of the same reviewers who dismiss summer blockbusters for their lack of narrative and character development. Away, critics! Even a casual fan of the books and movies could surmise that Mockingjay Part 1 functions as a curtain-raiser to its successor, which will be an all-out war against the Capitol.
+      </div>
+  </div>
+    </div>
+
+		
+		<div class="tab-pane" id="orange">
+      <div class="panel panel-default def">
+				<div class="panel-heading newpanel">
+					Horrible Bosses 2 (2014)
+				</div>
+        <div class="panel-body mypanel"> 
+					<div style="clear: left;">
+            <p style="float: left;"><img src="images/horrible.jpg" height="120" width="100" border="1px"></p>
+            <p><br><b>Director</b>  Sean Anders </br>
+            <br><b>Stars</b>  Jason Bateman, Jason Sudeikis, Charlie Day </br><br></p>
+          </div>       
+             THE BUZZ: Horrible Bosses updated Nine to Five for modern-day audiences a few summers ago and did well around the world (no surprise, given the title and its relatable premise). Last summer, a harder-to-market project about a small-time pot dealer who created a fake family in order to get a shipment of weed across the US/Mexico border performed even better than HB, so it's no surprise to see We're the Millers screenwriter Sean Anders get the call to direct and co-write HB2 (Anders's phone must be burning hot right now since he also is credited for Dumb and Dumber To's screenplay). 
+          </div>
+        </div>
+		</div>
+	</div>
+</div>
+ 
+ 
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swfobject.js" type="text/javascript"></script>
+<script src="js/flash_detect.js" type="text/javascript"></script>
+<script src="js/video.js" type="text/javascript" charset="utf-8"></script>
+<script>
+jQuery(document).ready(function ($) {
+$('#tabs').tab();
+});
+</script>
+</div> <!-- container -->
+ 
+  
+</body>
+</html> 
